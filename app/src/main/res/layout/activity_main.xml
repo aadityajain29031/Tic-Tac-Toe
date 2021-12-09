@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTVHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:visibility="visible" />
+
+    // single player button
+
+    <Button
+        android:id="@+id/idBtnSinglePlayer"
+        android:layout_width="140dp"
+android:textColor="@color/white"
+        android:layout_height="40dp"
+        android:layout_below="@+id/idTVHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Single Player"
+        android:textAllCaps="false"
+         />
+
+    // Multi player button
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/white"
+        android:text="Multi Player"
+        android:textAllCaps="false"
+        android:id="@+id/idBtnMultiPlayer"
+        android:layout_below="@+id/idBtnSinglePlayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>
